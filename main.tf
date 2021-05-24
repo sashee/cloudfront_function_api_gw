@@ -111,7 +111,7 @@ EOF
 }
 
 output "domain" {
-  value = aws_cloudfront_distribution.distribution.domain_name
+  value = "https://${aws_cloudfront_distribution.distribution.domain_name}"
 }
 
 module "apigw_origin" {
